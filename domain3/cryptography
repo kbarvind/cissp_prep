@@ -1,0 +1,219 @@
+
+-----
+
+Cryptographic Hash Function
+
+Generates a fixed-length hash (digest) of data. A hash value (fixed size, e.g., 256-bit). Ensures integrity (detects changes in data).
+
+Key: Not required except HMAC
+
+Algorithms: 
+SHA-256, MD5, HAVAL, BLAKE2
+* SHA- 256 is strongest - rounds of encrption 64
+* MD5 - 128 bits - Weak (Collison found)
+* HAVAL - 128 bits - 3,4,5
+
+Process:
+- Takes input data and produces a hash value. 
+- Cannot be reversed (one-way function).
+
+Tamper Detection:
+If data changes, the hash will change.
+
+
+HAVAL (Hash Algorithm of Variable Length)
+---
+HAVAL is a cryptographic hash function that produces a fixed-size hash (digest) from an input message. It was designed to be fast and customizable but is not widely used today due to security vulnerabilities.
+
+
+DES (Data Encryption Standard) 
+-----
+is a symmetric-key encryption algorithm developed in the 1970s by IBM and later adopted as a standard by the U.S. National Institute of Standards and Technology (NIST) in 1977. It was widely used for encryption but is now considered insecure due to its small key size.
+
+Key Features of DES
+	•	Symmetric Encryption: The same key is used for both encryption and decryption.
+	•	Block Cipher: Encrypts data in 64-bit blocks.
+	•	Key Size: Uses a 56-bit key (though the full key is 64 bits, 8 bits are for parity).
+	•	Feistel Structure: Uses 16 rounds of processing, applying permutations, substitutions, and XOR operations to the data.
+	•	S-Boxes: Non-linear substitution boxes (S-Boxes) add confusion to make the encryption stronger.
+
+Weaknesses of DES
+	•	Small Key Size (56-bit): Can be brute-forced in a reasonable time with modern computing power.
+	•	Vulnerable to Differential and Linear Cryptanalysis.
+	•	Not Secure for Modern Applications.
+
+-----
+
+Digital Signature Algorithm
+---
+
+Provides authenticity, integrity, and non-repudiation.
+Output: A digital signature (variable size, depends on the algorithm).
+Key: Requires a private key for signing and a public key for verification.
+Roe: Ensures integrity, authenticity, and non-repudiation.
+
+Algorithms:
+RSA, DSA, ECDSA.
+
+- Uses a private key to sign a message 
+- Uses a public key to verify the signature.
+
+Tamper Detection:
+If the data or signature is modified, verification will fail.
+
+
+HMAC(Hash-Based Message Authentication Code):
+----
+HMAC is a cryptographic mechanism that combines a hash function with a secret key to provide both data integrity and authentication. It is commonly used in secure communications and APIs.
+How HMAC Works
+	1.	A sender generates an HMAC using:
+        •	A secret key (shared between sender and receiver).
+        •	A message (data to be authenticated).
+        •	A cryptographic hash function (e.g., SHA-256, SHA-1).
+	2.	The HMAC is sent along with the message.
+	3.	The receiver recomputes the HMAC using the same key and message.
+	4.	If the computed HMAC matches the received HMAC, the message is authentic and unchanged.
+
+
+
+----
+
+
+## **Types of Ciphers**
+
+Ciphers are algorithms used to encrypt and decrypt data, ensuring confidentiality. They can be broadly classified into different types based on how they operate.
+
+---
+
+## **1. Classical Ciphers**
+Classical ciphers are simple encryption techniques used before modern cryptography.
+
+### **A. Substitution Ciphers**
+- Replace each letter with another letter, number, or symbol.
+- Examples:
+  1. **Caesar Cipher** – Shifts each letter by a fixed number (e.g., shift by 3: A → D, B → E).
+  2. **Atbash Cipher** – Replaces letters with their reverse (A ↔ Z, B ↔ Y).
+  3. **ROT13** – Rotates letters by 13 places (used in simple text obfuscation).
+  4. **Vigenère Cipher** – Uses a keyword to apply multiple shifts (polyalphabetic cipher).
+
+### **B. Transposition Ciphers**
+- Rearrange the letters of the plaintext without replacing them.
+- Examples:
+  1. **Rail Fence Cipher** – Arranges text in a zigzag pattern and reads row-wise.
+  2. **Columnar Transposition Cipher** – Rearranges letters based on a secret keyword.
+
+---
+
+## **2. Modern Ciphers**
+Modern cryptography uses advanced algorithms for secure encryption.
+
+### **A. Symmetric Key Ciphers**
+- Use the same key for encryption and decryption.
+- Faster but require secure key distribution.
+
+#### **i. Block Ciphers**
+- Encrypts data in fixed-size blocks (e.g., 64-bit, 128-bit).
+- Examples:
+  1. **Data Encryption Standard (DES)** – 64-bit block cipher, now obsolete.
+  2. **Triple DES (3DES)** – Applies DES encryption three times for added security.
+  3. **Advanced Encryption Standard (AES)** – Uses 128, 192, or 256-bit keys (widely used).
+  4. **Blowfish** – A fast, flexible 64-bit block cipher.
+  5. **Twofish** – An improved version of Blowfish, used in some modern applications.
+
+#### **ii. Stream Ciphers**
+- Encrypts data bit-by-bit or byte-by-byte, suitable for real-time applications.
+- Examples:
+  1. **RC4** – Widely used but now considered insecure.
+  2. **ChaCha20** – A secure and fast modern stream cipher.
+
+---
+
+### **B. Asymmetric Key Ciphers**
+- Use a pair of keys: **Public Key** (encryption) and **Private Key** (decryption).
+- Examples:
+  1. **RSA (Rivest-Shamir-Adleman)** – Based on prime factorization, used in SSL/TLS.
+  2. **Diffie-Hellman** – Key exchange algorithm, not for direct encryption.
+  3. **Elliptic Curve Cryptography (ECC)** – More secure with smaller key sizes.
+
+---
+
+### **C. Cryptographic Hash Functions (One-Way Ciphers)**
+- Convert data into a fixed-length hash value (cannot be reversed).
+- Examples:
+  1. **MD5** – 128-bit hash, but vulnerable to attacks.
+  2. **SHA-1** – 160-bit hash, but now deprecated.
+  3. **SHA-256** – Part of the SHA-2 family, widely used in security.
+  4. **SHA-3** – Newer and more secure hash function.
+
+---
+
+### **D. Quantum Cryptography (Emerging Ciphers)**
+- Uses quantum mechanics for secure encryption.
+- Example: **Quantum Key Distribution (QKD)** ensures unbreakable encryption.
+
+---
+
+## **3. Cipher Reference Tables for CISSP Exam**
+
+### **Symmetric Key Ciphers**
+| Cipher | Key Size (Bits) | Type | Industry Usage | Where It Is Used |
+|--------|---------------|------|----------------|------------------|
+| **DES** | 56 | Block | No (Obsolete) | Legacy systems |
+| **3DES** | 112/168 | Block | Limited | Payment systems, older financial institutions |
+| **AES** | 128/192/256 | Block | Yes | Secure communication, government, cloud encryption |
+| **Blowfish** | 32–448 | Block | Yes | VPNs, file encryption |
+| **Twofish** | 128/192/256 | Block | Yes | File and disk encryption |
+| **RC4** | 40–2048 | Stream | No (Insecure) | Previously used in SSL/TLS, Wi-Fi (WEP) |
+| **ChaCha20** | 256 | Stream | Yes | TLS, mobile encryption |
+
+### **Asymmetric Key Ciphers**
+| Cipher | Key Size (Bits) | Industry Usage | Where It Is Used |
+|--------|---------------|----------------|------------------|
+| **RSA** | 1024/2048/4096 | Yes | SSL/TLS, digital signatures |
+| **Diffie-Hellman** | 2048+ | Yes | Key exchange in VPNs, TLS |
+| **ECC** | 160–521 | Yes | Mobile encryption, IoT security |
+
+
+### **Cryptographic Hash Functions**
+| Hash Function | Output Size (Bits) | Industry Usage | Where It Is Used |
+|--------------|-----------------|----------------|------------------|
+| **MD5** | 128 | No (Insecure) | Legacy applications, checksums |
+| **SHA-1** | 160 | No (Deprecated) | Older security applications |
+| **SHA-256** | 256 | Yes | Digital signatures, blockchain |
+| **SHA-3** | 224/256/384/512 | Yes | Advanced cryptographic security |
+
+---
+
+## **Conclusion**
+- **Classical ciphers** (Caesar, Vigenère) are insecure for modern use.
+- **Symmetric ciphers** (AES, Blowfish) are fast but require secure key exchange.
+- **Asymmetric ciphers** (RSA, ECC) solve key exchange problems but are slower.
+- **Hash functions** provide data integrity but are not reversible.
+- **Quantum cryptography** is the future of encryption.
+
+Would you like a detailed explanation of any specific cipher? 🚀
+
+
+---
+
+## Cryptanalytic Attacks & Explanations
+
+Cryptanalysis refers to the study of breaking cryptographic algorithms. Below is a breakdown of the most common **cryptanalytic attacks**, their methods, and explanations:
+
+### **Common Cryptanalytic Attacks**
+
+| Attack Type                  | Description | Target | Effectiveness |
+|------------------------------|-------------|------------|--------------------|
+| **Brute Force Attack**       | Tries **every possible key** until the correct one is found. | Weak encryption with short key lengths. | 🚨 **High** (but slow for strong encryption). |
+| **Dictionary Attack**        | Uses a **precomputed list of common passwords or keys** to guess the correct one. | Password-based encryption. | 🚨 **Effective if weak passwords are used.** |
+| **Ciphertext-Only Attack**   | Attacker has **only encrypted text** but tries to deduce the plaintext or key. | All ciphers. | ⚠️ **Difficult but possible with weak algorithms.** |
+| **Known-Plaintext Attack**   | Attacker has **both plaintext and corresponding ciphertext** to deduce the key. | Symmetric & some asymmetric ciphers. | ⚠️ **Feasible if multiple plaintext-ciphertext pairs are available.** |
+| **Chosen-Plaintext Attack**  | Attacker can **choose plaintexts** and analyze corresponding ciphertexts to deduce the key. | RSA, AES, and others. | ⚠️ **Powerful if attacker has encryption access.** |
+| **Chosen-Ciphertext Attack** | Attacker can **choose ciphertexts** and analyze decrypted plaintexts to find weaknesses. | RSA & asymmetric cryptosystems. | ⚠️ **Highly effective if possible.** |
+| **Side-Channel Attack**      | Exploits **physical leaks** (power usage, timing, EM emissions) instead of breaking the cipher mathematically. | Hardware-based encryption (smart cards, TPM, HSMs). | 🚨 **Very powerful if attacker has physical access.** |
+| **Birthday Attack**          | Uses the **birthday paradox** to find hash collisions (same hash for different data). | Cryptographic hash functions. | 🚨 **Effective on weak hash algorithms (e.g., MD5, SHA-1).** |
+| **Man-in-the-Middle Attack (MITM)** | Attacker intercepts and modifies communication between two parties. | Public key cryptosystems & key exchanges. | ⚠️ **Prevented using strong authentication (e.g., TLS).** |
+| **Replay Attack**            | Reuses **captured authentication messages** to gain unauthorized access. | Authentication protocols (e.g., Kerberos, tokens). | ⚠️ **Prevented with timestamps & nonces.** |
+| **Weak Key Attack**          | Exploits encryption systems with known weak keys (e.g., DES has weak keys). | Symmetric & asymmetric encryption. | ⚠️ **Prevented by avoiding weak key choices.** |
+| **Frequency Analysis**       | Analyzes letter frequency patterns to break classical ciphers (e.g., Caesar cipher, Vigenère cipher). | Classical encryption schemes. | ⚠️ **Obsolete for modern encryption.** |
+| **Fault Injection Attack**   | Deliberately introduces faults (e.g., power glitches, hardware modifications) to extract secret keys. | Hardware-based encryption (smart cards, TPMs). | 🚨 **Prevented by using fault-resistant designs.** |

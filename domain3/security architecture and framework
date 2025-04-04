@@ -1,0 +1,60 @@
+---------
+
+Common Criteria
+
+Common Criteria (CC) is an international standard (ISO/IEC 15408) for evaluating the security of IT products and systems. It provides a framework for security assurance by defining requirements and evaluation levels for hardware, software, and firmware.
+
+1. Purpose of Common Criteria
+	•	Standardized Security Evaluation: Ensures products meet specific security requirements.
+	•	Global Recognition: Used by governments and organizations worldwide.
+	•	Certifies Security Claims: Helps vendors prove their product’s security.
+	•	Defines Evaluation Levels (EALs): Assesses how rigorously a product was tested.
+
+2. Key Components of Common Criteria
+
+A. Target of Evaluation (TOE)
+	•	The product or system being tested (e.g., a firewall, operating system, encryption module).
+    
+B. Protection Profile (PP)
+	•	A set of security requirements for a specific type of product (e.g., firewalls must meet certain access control and logging criteria).
+
+C. Security Target (ST)
+	•	A document that describes specific security functions and assurances implemented in the TOE.
+
+D. Evaluation Assurance Levels (EALs)
+	•	Defines how thoroughly a product is tested (EAL1 to EAL7).
+
+Evaluation Assurance Levels
+
+EAL1 - Functionally tested
+EAL2 - Structurally tested
+EAL3 - Methodically tested and checked
+EAL4 - Methodically designed, tested, and reviewed (Common for commercial products)
+EAL5 - Semi-formally designed and tested
+EAL6 - Semi-formally verified design and tested
+EAL7 - Formally verified design and tested (Highest security level, rarely used
+
+
+•	Higher EALs (5-7) require extensive verification, making them costly and time-consuming.
+•	EAL4 is commonly used for commercial security products.
+
+---------
+
+TOGAF (The Open Group Architecture Framework) 
+
+TOGAF (The Open Group Architecture Framework) is a widely used enterprise architecture (EA) framework that helps organizations design, implement, manage, and govern their IT infrastructure in alignment with business goals. It provides a structured approach to architecture development and ensures efficiency, scalability, and security in enterprise systems.
+
+
+---------
+
+
+# Differences Between Multitasking, Multiprocessing, Multiprogramming, and Multithreading
+
+| **Concept**       | **Definition** | **Key Feature** | **Example** |
+|------------------|---------------|----------------|-------------|
+| **Multitasking** | The ability of an OS to handle multiple tasks (processes) **at the same time** by rapidly switching between them. | **Task switching** | Running a web browser, music player, and document editor simultaneously. |
+| **Multiprocessing** | Using **multiple CPUs or cores** to execute multiple processes **at the same time**. | **True parallel execution** | A multi-core processor running different tasks on separate cores. |
+| **Multiprogramming** | Running **multiple programs in memory** at once, but only one executes at a time. The OS switches between them when waiting for I/O. | **Efficient CPU utilization** | Running a compiler and a text editor in the background while a program is being executed. |
+| **Multithreading** | A process is divided into multiple **threads** that execute independently but share the same resources. | **Faster execution within a single process** | A web browser rendering multiple tabs simultaneously. |
+
+-----

@@ -1,0 +1,79 @@
+1. Security Engineering Principles
+	•	Confidentiality, Integrity, Availability (CIA)
+	•	Least Privilege – Users should have only the minimum access necessary.
+	•	Defense in Depth – Layered security to mitigate risks.
+	•	Fail-Safe Defaults – Deny by default; allow only when explicitly permitted.
+	•	Economy of Mechanism – Simple, minimal design reduces vulnerabilities.
+	•	Complete Mediation – Every access request must be checked.
+	•	Open Design – Security should not depend on secrecy of design.
+	•	Separation of Privilege – Multiple conditions should be required for sensitive operations.
+	•	Least Common Mechanism – Minimize shared resources to reduce security risks.
+	•	Psychological Acceptability – Security mechanisms should not be too complex for users.
+
+⸻
+
+2. Security Models and Concepts
+	•	Bell-LaPadula Model (BLP) – Enforces confidentiality; “No Read Up, No Write Down.”
+	•	Biba Model – Focuses on integrity; “No Write Up, No Read Down.”
+	•	Clark-Wilson Model – Commercial model enforcing well-formed transactions.
+	•	Brewer-Nash (Chinese Wall) Model – Prevents conflicts of interest.
+	•	Graham-Denning Model – Defines rights for secure access control.
+	•	Harrison-Ruzzo-Ullman Model – Access rights management.
+
+⸻
+
+3. Security Architecture and Frameworks
+	•	Security Architecture Models:
+		•	TOGAF (The Open Group Architecture Framework)
+		•	SABSA (Sherwood Applied Business Security Architecture)
+		•	Zachman Framework
+	•	Security Control Frameworks:
+		•	NIST SP 800-53 – Security and privacy controls for U.S. government systems.
+		•	ISO 27001/27002 – International standard for security controls.
+		•	COBIT (Control Objectives for Information and Related Technologies) – IT governance framework.
+
+⸻
+
+4. System Security and Components
+	•	Trusted Computing Base (TCB) – The core of a secure system, including hardware, software, and firmware.
+		•	Security Kernel – The component that enforces security policy.
+		•	Reference Monitor – A mechanism that controls access to objects.
+	•	Hardware Security:
+		•	TPM (Trusted Platform Module)
+		•	HSM (Hardware Security Module)
+	•	Operating System Security:
+		•	Secure Boot
+		•	Sandboxing
+		•	Patch Management
+
+⸻
+
+5. Cryptography and Security Mechanisms
+	•	Symmetric vs. Asymmetric Encryption
+	•	Cryptographic Hashing (SHA, MD5)
+	•	Public Key Infrastructure (PKI)
+	•	Digital Signatures and Certificates
+	•	SSL/TLS and IPSec
+
+⸻
+
+6. Cloud Security and Virtualization
+	•	Cloud Security Models (IaaS, PaaS, SaaS)
+	•	Shared Responsibility Model
+	•	Container Security (Docker, Kubernetes)
+	•	Virtual Machine (VM) Security
+
+⸻
+
+7. Secure Design Principles for Network & Applications
+	•	Firewalls, IDS/IPS, and Network Segmentation
+	•	Zero Trust Architecture (ZTA)
+	•	Web Application Security (OWASP Top 10)
+	•	Secure Coding Practices
+
+⸻
+
+8. Physical Security
+	•	Perimeter Security (Locks, Guards, Biometrics)
+	•	Environmental Controls (HVAC, Fire Suppression, Power Backup)
+	•	TEMPEST Protection (Preventing Electromagnetic Eavesdropping)

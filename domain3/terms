@@ -1,0 +1,233 @@
+Terms:
+
+1. zero-day vulnerability
+
+A zero-day vulnerability is a software security flaw that is discovered by hackers before the software vendor knows about it. Because the vendor has zero days to fix the issue before it is exploited, it’s called a zero-day vulnerability.
+
+🔹 Since there’s no official patch available yet, cybercriminals can exploit the flaw to launch attacks known as zero-day exploits before a fix is released.
+
+How to Protect Against Zero-Day Attacks?
+
+✅ Keep your software updated – Apply security patches as soon as they are released.
+✅ Use a reputable antivirus and firewall – Helps detect suspicious activity.
+✅ Enable automatic updates – Reduces the risk of running outdated software.
+✅ Use behavior-based threat detection – Some security solutions can detect unknown threats based on unusual activity.
+✅ Limit user privileges – Avoid running software with admin rights unless necessary.
+
+
+2. Zero-Day Attack
+
+A Zero-Day Attack happens when hackers exploit a newly discovered software vulnerability before developers can release a security patch.
+
+🔹 Why is it called “Zero-Day”?
+	•	The term “Zero-Day” means zero days of defense, because the developers have no time to fix the flaw before it’s exploited.
+	•	These attacks are extremely dangerous because security software does not yet recognize the vulnerability and cannot block it.
+	
+Key Facts About Zero-Day Attacks:
+
+✅ Hackers, cybercriminals, or even nation-state attackers use zero-day exploits for espionage, financial gain, or sabotage.
+✅ Examples:
+	•	2017 WannaCry Ransomware exploited a Windows zero-day vulnerability.
+	•	Stuxnet Worm (discovered in 2010) targeted Iranian nuclear facilities.
+✅ Protection Against Zero-Day Attacks:
+	•	Keep software & OS updated regularly.
+	•	Use advanced endpoint security (like AI-powered detection).
+	•	Implement Intrusion Detection Systems (IDS).
+	
+
+3. The Trusted Computing Base (TCB) 
+is the combination of hardware, software, and firmware that enforces the system’s security policies. It includes the security kernel and ensures the integrity and confidentiality of operations.
+
+
+## Security Modes of Operation
+
+Security modes of operation define how systems handle classified information based on the clearance levels of users and the sensitivity of the data. These modes are essential for ensuring that systems operate within the constraints of security policies and access control mechanisms.
+
+### Types of Security Modes
+
+1. **Dedicated Security Mode**:
+    - All users must have the appropriate clearance, formal access approval, and a need-to-know for all information processed by the system.
+    - The system processes only one classification level of information at a time.
+
+2. **System High Security Mode**:
+    - All users must have the appropriate clearance and formal access approval for all information processed by the system.
+    - Users do not necessarily need a need-to-know for all information, but access is restricted based on this principle.
+
+3. **Compartmented Security Mode**:
+    - All users must have the appropriate clearance.
+    - Users must have formal access approval and a need-to-know for the specific compartmented information they access.
+    - The system enforces additional controls to segregate compartmented data.
+
+4. **Multilevel Security (MLS) Mode**:
+    - The system processes information at multiple classification levels.
+    - Users can access information based on their clearance, formal access approval, and need-to-know.
+    - MLS systems rely on robust access control mechanisms, such as Mandatory Access Control (MAC), to enforce security policies.
+
+### Importance of Security Modes
+Understanding security modes of operation is critical for designing and managing systems that handle classified or sensitive information. These modes ensure that access to information is appropriately restricted, reducing the risk of unauthorized disclosure or compromise.
+
+### Application in CISSP
+Security modes of operation are a key concept in Domain 3 of the CISSP Common Body of Knowledge (CBK). Professionals must understand these modes to design secure systems and ensure compliance with organizational and regulatory requirements.
+
+
+
+4 Change Management is a formal process that ensures modifications to a system do not introduce security vulnerabilities or negatively impact operations. It involves evaluating, approving, testing, and documenting changes before implementation.
+	•	Purpose: To maintain system integrity, security, and stability.
+	•	Key Steps in Change Management:
+		1.	Request for Change (RFC): Identify the need for change.
+		2.	Impact Analysis: Assess security risks and system stability.
+		3.	Approval Process: Get authorization from a Change Advisory Board (CAB).
+		4.	Testing: Validate that the change does not introduce vulnerabilities.
+		5.	Implementation & Documentation: Deploy the change and update records.
+		6.	Post-Implementation Review: Ensure no adverse effects.
+
+5. The Security Kernel is the core component of an operating system that enforces security policies through access controls, authentication, and process isolation. It is a subset of the Trusted Computing Base (TCB) and ensures that security rules are consistently applied.
+	•	Key Functions of the Security Kernel:
+	1.	Enforces Access Control: Ensures that only authorized users and processes can access system resources.
+	2.	Mediates All System Access: Acts as a gateway for all system interactions.
+	3.	Implements Reference Monitor Concept: Continuously checks security permissions and prevents unauthorized actions.
+	4.	Maintains System Integrity: Ensures that the OS operates within defined security constraints.
+
+✅ Example: In a multi-user OS, the security kernel ensures that User A cannot access User B’s private files unless explicitly permitted.
+
+
+6. Penetration Testing (Pen Testing) is a simulated cyberattack performed to identify vulnerabilities in a system, network, or application. Ethical hackers or security professionals try to exploit weaknesses to evaluate how an attacker could break in.
+	•	Key Features of Penetration Testing:
+	•	Simulates a real-world attack to assess security.
+	•	Identifies vulnerabilities and weaknesses.
+	•	Provides insights into security gaps and misconfigurations.
+	•	Often follows a structured methodology like NIST, OSSTMM, or OWASP.
+
+✅ Example:
+	•	A cybersecurity consultant is hired to perform penetration testing on a bank’s web application.
+	•	They use various hacking techniques (SQL Injection, Cross-Site Scripting, etc.) to find security flaws.
+	•	After testing, they provide a report detailing vulnerabilities and recommended fixes.
+	
+7. M of N Control
+
+This access-control mechanism creates a PIN number during the archive process and splits the number into two or more parts (N is the number of parts).
+This is a back-up process of public and private key material over multiple systems or devices. It’s a tool that prevents the re-creation of private and public key material from the backup. 
+
+8. Stages of Fire
+
+1. Incipient
+2. Smoke
+3. Flame
+4. Heat
+
+Fire can be identified at the first stage
+Fires may be detected as early as the incipient stage. During this stage, air ionization takes place, and specialized incipient fire detection systems can identify these changes to
+provide early warning of a fire
+
+
+9. Maintenance hooks, otherwise known as backdoors,
+provide developers with easy access to a system, bypassing normal security controls. If not removed prior to finalizing code, they pose a significant security vulnerability if an attacker discovers the maintenance hook
+
+10. TPM (Trusted Platform Module)
+
+TPM is a physical security chip that provides hardware-based security functions, such as encryption, key storage, and system integrity verification.
+
+Key Features of TPM:
+	•	Stores cryptographic keys securely.
+	•	Measures system integrity using hashes (e.g., detects unauthorized OS changes).
+	•	Generates and protects encryption keys (e.g., for BitLocker).
+	•	Ensures secure boot processes.
+	•	Provides hardware-based authentication.
+
+✅ Example Use Case: BitLocker encryption in Windows uses TPM to store encryption keys securely and prevent unauthorized access.
+
+11. SALT
+
+The salt is a random value added to a password before it is hashed by the operating system. The salt is then stored in a password file with the hashed password. This increases
+the complexity of cryptanalytic attacks by negating the usefulness of attacks that use precomputed hash values, such as rainbow tables.
+
+12 Kerckhoff’s Principle 
+states that the security of a cryptographic system should depend only on the secrecy of the key, not the secrecy of the algorithm.
+
+Key Ideas:
+	•	The algorithm should be publicly known and subject to peer review.
+	•	Only the encryption key should be kept secret.
+	•	If the system relies on “security through obscurity” (i.e., keeping the algorithm secret), it is inherently weak.
+	•	If an attacker discovers the algorithm, the system should still remain secure as long as the key is protected.
+
+✅ Example:
+Modern cryptographic algorithms like AES and RSA follow this principle—everyone knows the algorithm, but security depends on keeping the key confidential.
+
+13. Multiple terms
+	1.	Time of check (TOC) – This refers to when a system verifies whether an object (like a file or resource) is available.
+	2.	Covert channel – A sneaky way of transferring data outside normal communication methods, often for unauthorized access.
+	3.	Time of use (TOU) – The point when an object is actually accessed after it has been checked.
+	4.	Maintenance hooks (Backdoors) – Hidden or undocumented access points created by developers, sometimes exploited by attackers.
+	5.	Parameter checking – Ensuring inputs are properly validated to prevent attacks like buffer overflows.
+	6.	Race condition – An attack that takes advantage of the gap between time of check (TOC) and time of use (TOU) to manipulate system behavior.
+	
+14 States of CPU
+
+The Ready state is used when a process is prepared to execute but the CPU is not available. 
+The Running state is used when a process is executing on the CPU. 
+The Waiting state is used when a process is blocked waiting for an external event. 
+The Stopped state is used when a process terminates.
+
+15
+| **Term**  | **Definition** | **Used For** | **Example** |
+|-----------|---------------|-------------|-------------|
+| **MTTR** (Mean Time to Repair) | **Average time to repair a system after failure** | **Incident response, IT maintenance** | Takes **2 hours** to fix a server after a crash |
+| **MTTF** (Mean Time to Failure) | **Average lifespan of a non-repairable system** | **Hardware reliability (e.g., SSDs, RAM)** | Hard drives last **5 years** on average before failing |
+| **RTO** (Recovery Time Objective) | **Maximum downtime allowed before a system must be restored** | **Disaster recovery planning** | E-commerce website must recover **within 1 hour** |
+| **MTO** (Maximum Tolerable Outage) | **Maximum time a system can be down before severe business impact** | **Business continuity planning** | Hospital records must be restored **within 2 hours** |
+
+16
+# 🔐 Differences Between Physical Security Cards  
+
+| **Card Type**         | **Technology** | **Authentication Mechanism** | **Security Level** | **Common Use Cases** |
+|----------------------|---------------|------------------------------|--------------------|---------------------|
+| **Smart Card**      | Embedded microchip (contact or contactless) | Stores and processes data, requires a PIN or biometric | 🔒🔒🔒 High | Secure access control, banking, ID cards |
+| **Proximity Card**  | RFID (Radio Frequency Identification) | Uses radio waves to communicate with a reader, no physical contact required | 🔒🔒 Medium | Building access control, corporate badges |
+| **Magnetic Stripe Card** | Magnetic strip stores data | Swiped through a reader, can be cloned easily | 🔒 Low | Credit cards, hotel key cards, old access systems |
+| **Phase Three Card** | Advanced authentication using multiple technologies | Typically combines RFID, microchips, or other methods | 🔒🔒🔒 High | Military, government, high-security zones |
+
+## 🔹 CISSP Exam Tip  
+- **Smart Cards** → **Highly secure**, used for banking & authentication.  
+- **Proximity Cards** → **Contactless**, easy for building access.  
+- **Mag Stripe Cards** → **Least secure**, easily cloned.  
+- **Phase Three Cards** → **Most advanced**, used in high-security areas.  
+
+17 TEMPEST
+
+A technology developed to protect against electromagnetic eavesdropping by shielding devices from Van Eck radiation.
+
+18 Fences designed to deter more than the casual intruder should be at least 6 feet high.
+If a physical security system is designed to deter even determined intruders, it should be at
+least 8 feet high and topped with three strands of barbed wire
+
+19 In an aggregation attack, individual(s) use their access to specific pieces of information
+to piece together a larger picture that they are not authorized to access.
+
+20
+Faraday Cage - CISSP Explanation
+
+A Faraday cage is an enclosure designed to block electromagnetic fields (EMF) and prevent signal leakage or interference. It is made of conductive materials (such as metal mesh or solid metal) that distribute electrical charges across the surface, preventing external electromagnetic waves from penetrating inside.
+
+Key Features of a Faraday Cage:
+
+✅ Blocks electromagnetic signals (e.g., radio waves, Wi-Fi, Bluetooth, cellular signals).
+✅ Prevents electromagnetic interference (EMI) that can affect sensitive equipment.
+✅ Used for secure communications to prevent eavesdropping or remote hacking.
+✅ Protects electronic devices from electromagnetic pulses (EMPs) caused by solar flares or nuclear explosions.
+
+⸻
+
+21.zero-knowledge proof
+one individual demonstrates to another that they can achieve a result that requires sensitive information without actually disclosing the sensitive information.
+
+22
+ - Soda acid and other dry powder extinguishers work to remove the fuel supply.
+ - Water suppresses temperature, while 
+ - halon and carbon dioxide remove the oxygen supply from a fire.
+
+ 
+
+23. Data center humidity should be maintained between 40% and 60%. Values below this range increase the risk of static electricity, while values above this range may generate moisture that damages equipment.
+
+24. Mirai targeted “Internet of Things” devices, including routers, cameras, and DVRs. As organizations bring an increasing number of devices like these into their corporate networks, protecting both internal and external targets from insecure, infrequently updated, and often vulnerable IoT devices is increasing important.
+

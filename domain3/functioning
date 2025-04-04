@@ -1,0 +1,33 @@
+How Asymmetric Cryptosystem Works
+
+How It Works:
+	1.	Key Generation:
+	   •	A user generates a public-private key pair (e.g., using RSA, ECC).
+	2.	Encryption:
+	   •	The sender encrypts a message using the recipient’s public key.
+	3.	Decryption:
+	   •	The recipient decrypts the message using their private key.
+	4.	Digital Signatures (Optional):
+        •	The sender can digitally sign a message using their private key to prove authenticity.
+        •	The recipient verifies the signature using the sender’s public key.
+
+Example - Secure Communication
+
+📩 Alice sends an encrypted message to Bob
+	•	Bob generates a public-private key pair.
+	•	Alice encrypts her message using Bob’s public key.
+	•	Bob decrypts the message using his private key.
+
+✅ Benefit: Even if someone intercepts the message, they cannot decrypt it without Bob’s private key.
+
+Example - Digital Signature
+
+✍ Bob digitally signs a message to prove authenticity
+	•	Bob hashes the message and encrypts the hash using his private key (digital signature).
+	•	Alice receives the message + signature.
+	•	Alice decrypts the signature using Bob’s public key and verifies it against the hash of the original message.
+
+✅ Benefit: Ensures integrity, authenticity, and non-repudiation.
+
+----
+

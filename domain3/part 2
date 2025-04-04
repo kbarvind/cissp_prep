@@ -1,0 +1,259 @@
+---
+
+Physical Security Infrastructure
+
+1. CCTV - 
+2. IPS
+3. Tunrstiles
+4. Faraday Cages
+
+
+Mantrap vs Turnstile
+Purpose
+Mantrap: Controls access by trapping unauthorized users.
+Turnstile: Controls pedestrian flow, allowing only one person at a time.
+
+Design
+Mantrap: Two interlocking doors with a holding area in between.
+Turnstile: Rotating barrier or gate that allows controlled entry.
+
+Security Level
+Mantrap: High â€“ Used in high-security areas like data centers, banks, and government buildings.
+Turnstile: Medium â€“ Used in public transport, stadiums, and office lobbies.
+
+Authentication
+Mantrap: Requires biometric scan, badge, PIN, or security verification before entry.
+Turnstile: Typically uses RFID cards, tickets, or access badges.
+
+Mechanism
+Mantrap: One door must close before the second opens (prevents tailgating).
+Turnstile: Allows entry only when access is granted, but can be jumped or forced.
+
+Anti-Tailgating
+Mantrap: Highly effective â€“ Stops unauthorized access.
+Turnstile: Limited â€“ Someone may slip through behind an authorized user.
+
+Example Uses
+Mantrap: Data centers, secure labs, prisons, high-security offices.
+Turnstile: Subways, stadiums, office lobbies, theme parks.
+
+---
+
+# Power Issues in Physical Security  
+
+| **Term**      | **Definition** | **Impact on Systems** | **Possible Solutions** |
+|--------------|--------------|---------------------|------------------|
+| **Fault**    | A momentary power disruption or a single phase failure. | Can cause **minor disruptions** but typically recovers quickly. | Use **Uninterruptible Power Supply (UPS)** to handle short failures. |
+| **Blackout** | A complete loss of power for an extended period. | Causes **total shutdown** of electrical systems, leading to data loss or hardware damage. | Use **generators, UPS, and backup power systems**. |
+| **Sag**      | A temporary **drop** in voltage (under-voltage). | Can lead to **system instability**, crashes, or hardware malfunction. | Install **voltage regulators and power conditioners**. |
+| **Noise**    | Unwanted **electrical signals or interference** in power lines. | Can corrupt **data transmissions**, affect circuits, and degrade performance. | Use **power filters, surge protectors, and shielded cables**. |
+
+
+### **CISSP Exam Tip 🚀**  
+- **Blackout = Complete power loss** (most severe).  
+- **Sag = Voltage drop** (not total loss, but can cause issues).  
+- **Noise = Electrical interference** (affects sensitive equipment).  
+- **Fault = Short disruption** (often recovers quickly). 
+
+----
+PTO
+
+Data center humidity should be maintained between 40% and 60%. Values below
+this range increase the risk of static electricity, while values above this range may generate
+moisture that damages equipment.
+
+---
+Industrial Controls
+
+SCADA is an industrial control system (ICS) used to monitor and control infrastructure, industrial processes, and facility-based operations remotely. It is commonly used in manufacturing, energy, water treatment, transportation, and critical infrastructure.
+
+Key Functions of SCADA:
+	1.	Data Acquisition: Collects real-time data from sensors, machines, and controllers.
+	2.	Supervisory Control: Allows operators to remotely control processes via Human-Machine Interfaces (HMI).
+	3.	Real-time Monitoring: Continuously monitors industrial processes (e.g., pipeline pressure, power grid status).
+	4.	Alarming & Notifications: Alerts operators to abnormal conditions (e.g., equipment failure).
+	5.	Historical Data Storage: Logs data for analysis and reporting.
+    
+Component & Functions:
+HMI (Human-Machine Interface)
+Interface for operators to monitor and control the system.
+
+RTUs (Remote Terminal Units)
+Collect data from sensors and send it to the central system.
+
+PLCs (Programmable Logic Controllers)
+Automated controllers that manage machinery.
+
+SCADA Server (Central System)
+Processes data and provides remote access.
+
+Sensors & Actuators
+Detect environmental changes and control physical processes.
+
+----
+
+Fire Supression Systems
+
+Wet Pipe Fire Suppression System
+
+🔥 How It Works:
+	•	Pipes are always filled with water under pressure.
+	•	When a fire is detected, sprinkler heads activate automatically, releasing water immediately.
+	•	The system is quickest at extinguishing fires.
+
+✅ Advantages:
+✔ Fast response time (water is already in pipes).
+✔ Reliable and simple to maintain.
+✔ Cost-effective.
+
+❌ Disadvantages:
+✖ Risk of water leaks/damage to equipment (e.g., in data centers).
+✖ Can freeze in cold environments, making it unsuitable for cold storage areas.
+
+📌 CISSP Relevance:
+	•	Best for offices, commercial buildings, and environments where water damage is not a concern.
+	•	Not ideal for data centers due to the risk of accidental discharge.
+
+
+Dry Pipe Fire Suppression System
+
+🔥 How It Works:
+	•	Pipes are filled with pressurized air or nitrogen instead of water.
+	•	When a fire occurs, sprinkler heads open, releasing air first.
+	•	Water then flows into the pipes and is discharged at the affected location.
+
+✅ Advantages:
+✔ Prevents water damage in case of false alarms.
+✔ Suitable for cold environments (prevents freezing).
+✔ Preferred for data centers and sensitive areas.
+
+❌ Disadvantages:
+✖ Slower response time (takes time for water to fill the pipes).
+✖ More expensive and complex to maintain than wet pipe systems.
+
+📌 CISSP Relevance:
+	•	Best for data centers, unheated warehouses, and cold environments.
+	•	Used where accidental water leaks could cause major damage to IT infrastructure.
+    
+
+Deluge Fire Suppression System
+
+🔥 How It Works:
+	•	Pipes are empty (no water or air).
+	•	When a fire is detected (via a fire alarm system), a valve opens, and water flows through all open sprinklers at once.
+	•	Unlike Wet or Dry Pipe systems, all sprinklers discharge water simultaneously, regardless of fire location.
+
+✅ Advantages:
+✔ Very fast at controlling large fires.
+✔ Best for areas with high fire risk (e.g., chemical plants, aircraft hangars).
+
+❌ Disadvantages:
+✖ Causes massive water discharge (not suitable for sensitive areas like data centers).
+✖ Requires a highly reliable fire detection system.
+
+📌 CISSP Relevance:
+	•	Used in high-hazard areas (e.g., fuel storage facilities, power plants).
+	•	Not ideal for IT environments due to excessive water discharge.
+    
+
+Preaction Fire Suppression System
+
+🔥 How It Works:
+	•	Pipes are dry (filled with air or nitrogen) until a fire is detected.
+	•	Unlike a dry pipe system, two triggers are required before water is released:
+	1.	Fire detection system (smoke/heat detector) activates the valve, allowing water into the pipes.
+	2.	Sprinkler heads must then open to release water.
+	•	This prevents accidental water discharge due to false alarms.
+
+✅ Advantages:
+✔ Ideal for data centers, museums, and libraries (lowers water damage risk).
+✔ Prevents accidental water discharge (compared to wet/dry systems).
+✔ Can be combined with gas-based suppression for added protection.
+
+❌ Disadvantages:
+✖ More expensive and complex than other sprinkler systems.
+✖ Slight delay in water discharge (not as fast as wet pipe systems).
+
+📌 CISSP Relevance:
+	•	Best for environments where water damage is a concern (e.g., data centers, archives).
+	•	Provides an additional layer of security compared to standard wet/dry systems.
+    
+----
+
+## Fire Extinguisher Classes & Their Uses  
+
+| **Class** | **Type of Fire** | **Fuel Source** | **Example** | **Extinguishing Agents** |
+|-----------|----------------|-----------------|-------------|--------------------------|
+| **Class A** | Ordinary Combustibles | Wood, Paper, Cloth, Plastic | Office fires, House fires | Water, Foam, Dry Chemical |
+| **Class B** | Flammable Liquids & Gases | Gasoline, Oil, Paint, Alcohol | Fuel station fires, Chemical lab fires | Foam, CO₂, Dry Chemical |
+| **Class C** | Electrical Fires | Energized electrical equipment | Server rooms, Data centers | CO₂, Dry Chemical (Non-conductive) |
+| **Class D** | Combustible Metals | Magnesium, Lithium, Sodium | Industrial & Chemical plants | Dry Powder |
+| **Class K** | Cooking Fires | Grease, Cooking Oil, Fat | Kitchen, Restaurants | Wet Chemical |
+
+## CISSP Relevance:
+- **Data Centers & Server Rooms:** Use **Class C (CO₂ or Dry Chemical)** extinguishers to prevent electrical damage.  
+
+# 🔥 Fire Extinguisher Classes - Easy CISSP Memory Tricks  
+
+## 🔹 Mnemonic to Remember Fire Classes  
+**"A**ll **B**ig **C**ompanies **D**emand **K**itchen Safety"  
+
+- **A** → **A**sh → Wood, Paper, Cloth (Ordinary combustibles)  
+- **B** → **Boil** → Liquids & Gasoline (Flammable liquids/gases)  
+- **C** → **Current** → Electrical Equipment (Electronics & Data Centers)  
+- **D** → **Drill** → Metals (Magnesium, Sodium, Lithium)  
+- **K** → **Kitchen** → Cooking Oils & Grease  
+
+## 🔹 Quick Memory Trick by Matching Elements  
+
+| **Class** | **Memory Trick** | **Extinguisher** |
+|-----------|-----------------|------------------|
+| **A** (Ash) | Things that turn to **ash** (wood, paper) | **Water, Foam, Dry Chemical** |
+| **B** (Boil) | Flammable **liquids that can boil** (gasoline, oil) | **Foam, CO₂, Dry Chemical** |
+| **C** (Current) | **Electrical current** (live wires, servers) | **CO₂, Dry Chemical** (Non-conductive) |
+| **D** (Drill) | **Metal work requires drilling** (magnesium, lithium) | **Dry Powder** |
+| **K** (Kitchen) | **Cooking & grease fires** | **Wet Chemical** |
+
+# 🔥 Fire Suppressants for Each Class of Fire  
+
+## 🔹 Fire Extinguisher Classes & Suppressants  
+
+| **Class** | **Type of Fire** | **Fuel Source** | **Best Suppressants** |
+|-----------|----------------|-----------------|-----------------------|
+| **Class A** | Ordinary Combustibles | Wood, Paper, Cloth, Plastic | **Water, Foam, Dry Chemical** |
+| **Class B** | Flammable Liquids & Gases | Gasoline, Oil, Paint, Alcohol | **Foam, CO₂, Dry Chemical** |
+| **Class C** | Electrical Fires | Energized Electrical Equipment | **CO₂, Dry Chemical (Non-Conductive)** |
+| **Class D** | Combustible Metals | Magnesium, Lithium, Sodium | **Dry Powder (Metal-specific: Sodium Chloride, Graphite, etc.)** |
+| **Class K** | Cooking Fires | Grease, Cooking Oil, Fat | **Wet Chemical (Potassium Acetate, Carbonate, Citrate)** |
+
+## 🔹 CISSP Exam Tip  
+- **Class C** requires non-conductive extinguishers (**CO₂, Dry Chemical**).  
+- **Class D** requires **specialized dry powder** agents for metal fires.  
+- **Class K** is essential for **commercial kitchens** due to grease fires.  
+
+## 🔹 CISSP Exam Tip  
+- **Class A & B** are common in homes/offices.  
+- **Class C** is critical for **data centers & electrical fires**.  
+- **Class D** is rare (mainly industrial).  
+- **Class K** is for **kitchens & restaurants**.  
+
+----
+
+| **Suppressant** | **Status** | **Type** | **Environmental Impact** |
+|---------------|-----------|------|----------------------|
+| **Halon** | **No longer manufactured** | Halocarbon | **Ozone-depleting** (Banned under Montreal Protocol) |
+| **FM-200 (HFC-227ea)** | **Still in use** | Halocarbon | **Eco-friendly alternative** to Halon |
+| **Novec 1230** | **Still in use** | Halocarbon | **Low global warming potential** |
+| **Argon** | **Still in use** | Inert Gas | **Safe for environment**, uses pure argon |
+| **Inergen** | **Still in use** | Inert Gas | **Non-toxic, environmentally friendly**, uses a mix of nitrogen, argon, and CO₂ |
+| **CO₂ (Carbon Dioxide)** | **Still in use** | Inert Gas | **Effective but dangerous in occupied spaces** |
+| **Water Mist** | **Still in use** | Water-based | **Safe, effective for sensitive equipment** |
+
+---
+
+### **CISSP Exam Tip:**  
+- If a question asks about a **fire suppression system that is no longer manufactured due to environmental concerns**, the answer is always **Halon**.  
+- **FM-200, Novec 1230, and Inergen** are modern replacements for Halon, commonly used in data centers and sensitive environments.  
+- **CO₂ is effective but hazardous to humans in enclosed spaces**—not ideal for occupied areas. 
+-----
+

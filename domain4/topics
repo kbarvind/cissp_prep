@@ -1,0 +1,101 @@
+1. OSI and TCP/IP Models
+	•	OSI Model (7 Layers):
+        •	Layer 1: Physical – Cables, fiber optics, wireless signals.
+        •	Layer 2: Data Link – MAC addresses, Ethernet, ARP, VLANs.
+        •	Layer 3: Network – IP addressing, routing, NAT.
+        •	Layer 4: Transport – TCP vs. UDP, port numbers.
+        •	Layer 5: Session – Establishing, managing, terminating sessions.
+        •	Layer 6: Presentation – Data formats, encryption.
+        •	Layer 7: Application – HTTP, FTP, DNS, SMTP.
+	•	TCP/IP Model (4 Layers):
+        •	Network Access (Physical + Data Link)
+        •	Internet (Network Layer)
+        •	Transport (TCP/UDP)
+        •	Application (Application, Presentation, Session)
+
+⸻
+
+2. Network Protocols and Security
+	•	IP Addressing (IPv4 vs. IPv6)
+	•	Common Protocols:
+        •	Secure (HTTPS, TLS, IPsec, SSH)
+        •	Insecure (HTTP, FTP, Telnet)
+	•	Port Security:
+        •	Well-Known Ports (0-1023)
+        •	Registered Ports (1024-49151)
+        •	Dynamic/Ephemeral Ports (49152-65535)
+
+⸻
+
+3. Network Security Controls
+	•	Firewalls:
+        •	Packet Filtering (Stateless)
+        •	Stateful Inspection
+        •	Proxy Firewalls
+        •	Next-Gen Firewalls (NGFW)
+	•	Intrusion Detection and Prevention Systems (IDS/IPS)
+	•	Network Access Control (NAC)
+	•	Network Segmentation (VLANs, DMZs, Air-Gapping)
+	•	DDoS Protection (Rate Limiting, Blackholing, CDNs)
+
+⸻
+
+4. Wireless Network Security
+	•	Wi-Fi Security Standards:
+        •	WPA2, WPA3
+        •	WEP (Weak, avoid using)
+	•	Wireless Attacks:
+        •	Evil Twin, Rogue APs, Deauthentication Attacks
+        •	WPS Bruteforce Attacks
+	•	Mitigations:
+	•	 Disable WPS, Use Strong WPA3 Encryption, MAC Filtering
+
+⸻
+
+5. Secure Network Design and Architecture
+	•	Zero Trust Architecture (ZTA)
+	•	Defense in Depth for Networks
+	•	Software-Defined Networking (SDN)
+	•	Microsegmentation
+
+⸻
+
+6. Voice over IP (VoIP) Security
+	•	Threats:
+	•	 Eavesdropping, Man-in-the-Middle (MitM), DoS Attacks
+	•	Security Measures:
+	•	 Encryption (SRTP), Secure SIP, VLANs for VoIP
+
+⸻
+
+7. VPNs and Remote Access Security
+	•	VPN Types:
+        •	IPsec VPNs (Tunnel vs. Transport Mode)
+        •	SSL/TLS VPNs (For Web-Based Access)
+        •	L2TP, PPTP (Legacy, Insecure)
+	•	Zero Trust Network Access (ZTNA) vs. Traditional VPNs
+
+⸻
+
+8. Network Attacks and Countermeasures
+	•	Common Attacks:
+        •	Man-in-the-Middle (MitM)
+        •	DNS Spoofing / Poisoning
+        •	ARP Spoofing
+        •	SYN Flood, Smurf Attack
+        •	Ransomware Propagation via Network
+	•	Mitigation Strategies:
+	•	 Strong Encryption, Secure DNS (DNSSEC), Network Monitoring
+
+⸻
+
+9. Content Filtering and Secure Web Gateways
+	•	URL Filtering, Sandboxing
+	•	Data Loss Prevention (DLP) for Networks
+
+⸻
+
+10. Cloud and Virtual Network Security
+	•	Cloud Network Models (Hybrid, Public, Private)
+	•	Security Groups, Network ACLs in Cloud
+	•	CASB (Cloud Access Security Broker)

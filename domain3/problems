@@ -1,0 +1,5 @@
+1. To determine the number of possible keys for a cipher that uses a 5-bit key, we use the formula:
+{Total Keys} = 2^{\text{number of bits}}
+Since the key contains 5 bits, the number of possible keys is:
+2^5 = 32
+
