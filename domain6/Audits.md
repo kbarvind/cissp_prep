@@ -27,6 +27,64 @@ Security audits are crucial for evaluating an organization's security posture an
 | **HIPAA** | Protects healthcare data privacy and security. |
 | **GDPR** | Ensures data protection and privacy for individuals in the EU. |
 
+# Difference Between SOC 1 and SOC 2 Audits
+
+| Feature  | SOC 1 | SOC 2 |
+|----------|------|------|
+| **Purpose** | Focuses on **financial reporting** controls | Focuses on **security, availability, processing integrity, confidentiality, and privacy** |
+| **Applicable To** | Service providers handling **financial transactions** (e.g., payroll, accounting) | Cloud service providers, SaaS companies, and IT-managed service providers |
+| **Framework** | **Statement on Standards for Attestation Engagements (SSAE) 18** | **Trust Service Criteria (TSC)** (Security, Availability, Processing Integrity, Confidentiality, Privacy) |
+| **Who Needs It?** | Companies that **impact their clients' financial statements** | Companies handling **sensitive customer data** (e.g., SaaS, cloud storage, IT services) |
+| **Report Types** | Type 1: A point-in-time assessment <br> Type 2: Covers a specific period (e.g., 6-12 months) | Type 1: A point-in-time assessment <br> Type 2: Covers a specific period (e.g., 6-12 months) |
+| **Example Companies** | Payroll processors, financial service firms | Cloud providers, SaaS platforms, data centers |
+
+## **Summary**
+- **SOC 1** → Financial control audits  
+- **SOC 2** → Security and data protection audits  
+
+## SOC Reports Comparison Table (CISSP Focused)
+
+| **Category**           | **SOC 1**                                           | **SOC 2**                                           |
+|----------------------|------------------------------------------------|------------------------------------------------|
+| **Purpose**         | Evaluates controls relevant to financial reporting. | Evaluates controls related to security, availability, processing integrity, confidentiality, and privacy. |
+| **Focus Area**      | Financial reporting risks & controls. | IT security & data protection risks. |
+| **Who Needs It?**   | Organizations that process financial transactions (e.g., payroll, accounting). | Companies handling sensitive customer data (e.g., cloud providers, SaaS companies). |
+| **Compliance Standards Addressed** | Sarbanes-Oxley Act (SOX), SSAE 18 | AICPA Trust Services Criteria (TSC), GDPR, HIPAA, PCI-DSS |
+| **Controls Evaluated** | Internal controls over financial reporting (ICFR). | Security, availability, processing integrity, confidentiality, privacy controls. |
+| **Intended Audience** | Auditors, regulators, financial stakeholders. | Business partners, customers, and security teams. |
+
+---
+
+## SOC Type I vs. Type II Comparison
+
+| **Category**           | **Type I**                                         | **Type II**                                         |
+|-----------------------|------------------------------------------------|------------------------------------------------|
+| **Purpose**          | Evaluates design and implementation of controls **at a single point in time**. | Evaluates design **and operating effectiveness** of controls **over a period of time**. |
+| **Assessment Scope** | Are controls properly designed? | Are controls designed **and consistently operating effectively**? |
+| **Testing Duration** | A snapshot assessment (one-time review). | Ongoing assessment (typically 3-12 months). |
+| **What It Evaluates?** | Design of security controls but **not** their effectiveness over time. | Design + effectiveness of security controls over time. |
+| **When to Use?**     | When a company wants a quick evaluation of control design. | When a company wants proof that controls are effective over time (important for compliance). |
+
+---
+
+## How to Use This for CISSP Exam?
+
+1. **Memorize Key Differences**:  
+   - SOC 1 → Financial controls  
+   - SOC 2 → Security & data protection controls  
+   - Type I → Control **design**  
+   - Type II → Control **effectiveness over time**  
+
+2. **Understand Use Cases**:  
+   - If a company **processes financial transactions**, **SOC 1** applies.  
+   - If a company **stores customer data** (e.g., cloud providers), **SOC 2** applies.  
+   - If a company needs **proof of effectiveness**, **Type II is required**.  
+
+3. **Real-World Application in Security Operations (Domain 7 of CISSP)**:  
+   - SOC 2 Type II is critical for vendors in **third-party risk management**.  
+   - CISSP professionals in **risk management and compliance roles** should know when to request SOC reports.  
+
+
 ### **Key Audit Areas in Compliance Audits:**
 - **Access control mechanisms** (e.g., least privilege, role-based access control).
 - **Data encryption and protection** measures.
