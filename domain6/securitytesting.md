@@ -78,4 +78,38 @@ Security testing ensures that systems, applications, and networks remain secure 
 
 ---
 
-**Useful for CISSP Domain 6 (Security Assessment & Testing) and Domain 7 (Security Operations).**  
+# Fuzzing
+
+## **Based on Input Generation**
+| **Type**            | **Description** |
+|---------------------|----------------|
+| **Generation-Based Fuzzing**  | Creates test cases from scratch using predefined rules or grammars. |
+| **Mutation-Based Fuzzing**    | Modifies existing valid inputs to create new test cases (bit flipping, inserting special characters, etc.). |
+| **Hybrid Fuzzing**            | Combines generation and mutation techniques to enhance effectiveness. |
+
+ **Notes:**
+ - Generational fuzzing relies on models for application input and conducts fuzzing attacks based on that information. 
+ - Mutation-based fuzzers are sometimes called “dumb” fuzzers because they simply mutate or modify existing data samples to create new test
+samples.
+
+## **Based on Target Application**
+| **Type**                 | **Description** |
+|--------------------------|----------------|
+| **File Format Fuzzing**  | Tests how applications handle different file types (PDF, JPEG, MP4). |
+| **Network Protocol Fuzzing** | Targets communication protocols (HTTP, TCP/IP, DNS, etc.). |
+| **API Fuzzing**          | Tests security of API endpoints by sending unexpected inputs. |
+| **Web Fuzzing**          | Finds vulnerabilities in web applications (SQL Injection, XSS). |
+| **Kernel Fuzzing**       | Tests OS kernels for memory corruption issues (e.g., AFL, Syzkaller). |
+| **Memory & Buffer Fuzzing** | Looks for buffer overflows and memory leaks. |
+| **IoT & Embedded Fuzzing** | Finds vulnerabilities in IoT devices and embedded systems. |
+
+### **Popular Fuzzing Tools**
+- **AFL (American Fuzzy Lop)** – Coverage-guided fuzzing tool.
+- **libFuzzer** – In-process fuzzing for C/C++ programs.
+- **Peach Fuzzer** – Commercial fuzzer for various applications.
+- **Sulley** – Framework for fuzzing network protocols.
+- **ZZUF** – Mutation-based fuzzer for file formats and network applications.
+- **Syzkaller** – Kernel fuzzing for Linux.
+
+----
+

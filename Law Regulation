@@ -24,6 +24,20 @@ Approves three algorithms for digital signatures:
 
  - NIST SP-800 series of documents address computer security in a variety of areas.
 	- 800-88 -> guidelines for sanitization and disposition
+	- 800-53A -> assessment of security and privacy controls
+	- 800-137 -> Information Security Continuous Monitoring program
 
 
+## PTM
+
+- ITIL, which originally stood for IT Infrastructure Library, is a set of practices for IT service management, and is not typically used for auditing. 
+ - COBIT, or the Control Objectives for Information and Related Technology, 
+ - ISO 27002, SSAE-18, or the Statement on Standards for Attestation Engagements number 18, are all used for auditing.
+
+| **Framework**  | **Purpose**  | **Audit Standard?**  |
+|---------------|-------------|----------------------|
+| **COBIT** (Control Objectives for Information and Related Technologies) | IT governance & control framework used for audits. | ✅ **Yes** |
+| **SSAE-18** (Statement on Standards for Attestation Engagements No. 18) | Standard for auditing service organizations (SOC 1, SOC 2). | ✅ **Yes** |
+| **ISO 27002** | International standard for information security controls, often part of security audits. | ✅ **Yes** |
+| **ITIL** (Information Technology Infrastructure Library) | IT service management (ITSM) framework—**not an audit standard**. | ❌ **No** |
 
