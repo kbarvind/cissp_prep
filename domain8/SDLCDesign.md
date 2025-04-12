@@ -1,6 +1,22 @@
 
 # 📘 Design Approaches in Secure Software Development
 
+
+## 🔄 Security-Focused SDLC – Summary Table
+
+| **Phase**                      | **Key Focus**                               | **Security Perspective**                          |
+|-------------------------------|---------------------------------------------|--------------------------------------------------|
+| Conceptual Definition         | Define scope & goals                        | Identify early security concerns                 |
+| Functional Requirements       | Define expected system behavior             | Include security & compliance requirements       |
+| Control Specifications        | Translate requirements into controls        | Design specific security mechanisms              |
+| Design Review                 | Assess architectural design                 | Eliminate insecure design patterns               |
+| Code Review                   | Review code for quality & safety            | Find and fix security-related coding flaws       |
+| System Test Review            | Verify complete system behavior             | Validate implemented security controls           |
+| Maintenance & Change Mgmt     | Ongoing updates & change handling           | Patch management, secure updates, risk mitigation |
+
+---
+
+
 ### **Design Approaches in Secure Software Development**
 
 | **Approach**        | **Description**                                                                                     | **CISSP Relevance**                                                      |
@@ -42,3 +58,53 @@
 | **Level 3** | Defined              | Processes are documented, standardized, and integrated into a standard software process across the organization. | - Organizational Process Focus <br> - Training Program <br> - Integrated Software Management <br> - Product Engineering |
 | **Level 4** | Managed              | Process and product quality are measured. Quantitative goals are set and measured.               | - Quantitative Process Management <br> - Software Quality Management |
 | **Level 5** | Optimizing           | Focus on continuous process improvement through feedback and innovation.                        | - Defect Prevention <br> - Technology Change Management <br> - Process Change Management |
+
+
+---
+
+# 📘 Degree of a Table (Relational Databases)
+
+In the context of **relational databases**, the term **degree of a table** refers to:
+
+---
+
+## 🔢 Key Definitions
+
+| **Term**       | **Definition**                                                                 |
+|----------------|----------------------------------------------------------------------------------|
+| **Degree**     | The **number of attributes (columns)** in a relation (table).                  |
+| **Cardinality**| The **number of tuples (rows)** in a relation (table).                         |
+
+---
+
+## 🧩 Example
+
+Consider a table called `Employee`:
+
+| EmpID | Name    | Department | Salary |
+|--------|---------|------------|--------|
+| 101    | Alice   | HR         | 50000  |
+| 102    | Bob     | IT         | 60000  |
+
+- **Degree** = 4 (because there are 4 columns: EmpID, Name, Department, Salary)
+- **Cardinality** = 2 (because there are 2 rows of data)
+
+---
+
+# 🔐 Accreditation vs. Assurance – CISSP Notes
+
+| **Term**        | **Definition**                                                                                   | **CISSP Context**                                  |
+|----------------|--------------------------------------------------------------------------------------------------|----------------------------------------------------|
+| **Assurance**   | The level of confidence that security measures are effectively protecting the system.           | Ensures that **security controls** are designed, implemented, and functioning properly. |
+| **Accreditation** | The **formal acceptance of residual risk** and decision to authorize the system for operation. | Typically done by **senior management** after reviewing test results and risk analysis. |
+
+---
+
+## ACID Term
+
+**Durability** requires that once a transaction is committed to the database it must be preserved. 
+**Atomicity** ensures that if any part of a database transaction fails, the entire transaction must be rolled back as if it never occurred. **Consistency** ensures that all transactions are consistent with the logical rules of the database, such as having a primary
+key. 
+**Isolation** requires that transactions operate separately from each other.
+
+---

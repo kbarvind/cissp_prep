@@ -19,4 +19,13 @@ coupling.
 | **Aggregate**  | Combining multiple pieces of lower-classified data to derive higher-level sensitive information.  | A data exposure method discussed in **Asset Security**; often controlled via query restrictions. |
 | **Modular**    | A design approach that separates a system into independent, interchangeable components.           | Used in **secure software development** (Domain 8); helps isolate functions and limit impact. |
 
------
+---
+
+Macro viruses are most commonly found in office productivity documents, such as Microsoft Word documents that end in the .doc or .docx extension. They are not commonly found in executable files with the .com or .exe extensions.
+
+---
+
+A fail open configuration may be appropriate in this case. In this configuration, the firewall would continue to pass traffic without inspection while it is restarting. This would minimize downtime, and the traffic would still be protected by the other security controls
+described in the scenario. 
+
+---
