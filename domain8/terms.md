@@ -70,3 +70,29 @@ A type of malware that delivers or installs other malware (e.g., botnet payloads
 - **Emotet**: Malware platform used for spam and delivering other malware.
 
 ---
+
+
+**Pass-around** reviews are often done via email or using a central code review system, allowing developers to review code asynchronously. 
+**Pair programming** requires two programmers to work together, with one writing code and the other reviewing and
+tracking progress. 
+**Team reviews** are typically done in a group, 
+**Fagan inspection** is a formal review process that would involve both the developer and a team to review the code using a formal process
+
+---
+
+**Multipartite viruses** use multiple propagation mechanisms to defeat system security controls but do not necessarily include techniques designed to hide the malware from antivirus software. 
+**Stealth viruses** tamper with the operating system to hide their existence. 
+**Polymorphic viruses** alter their code on each system they infect to defeat signature detection. 
+**Encrypted viruses** use a similar technique, employing encryption to alter their appearance and avoid signature detection mechanisms.
+
+---
+
+
+## 🧾 Software requirements
+
+| **Option**               | **Description**                                                                                  |
+|--------------------------|--------------------------------------------------------------------------------------------------|
+| **A. Derived Requirements**     | Requirements that are deduced or inferred from higher-level (parent) requirements. These support the main functional and non-functional requirements. |
+| **B. Structural Requirements**  | Requirements that focus on the system's architecture, design, or how components are arranged, rather than how the system behaves. |
+| **C. Behavioral Requirements**  | Describe **how** the system should behave in response to specific inputs or conditions. They often overlap with functional requirements but focus more on **system reactions**. |
+| **D. Functional Requirements** | Define the **specific tasks**, **inputs**, **outputs**, and **interactions** the software must perform to meet user needs. |

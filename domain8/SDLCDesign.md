@@ -103,7 +103,8 @@ Consider a table called `Employee`:
 ## ACID Term
 
 **Durability** requires that once a transaction is committed to the database it must be preserved. 
-**Atomicity** ensures that if any part of a database transaction fails, the entire transaction must be rolled back as if it never occurred. **Consistency** ensures that all transactions are consistent with the logical rules of the database, such as having a primary
+**Atomicity** ensures that if any part of a database transaction fails, the entire transaction must be rolled back as if it never occurred.
+**Consistency** ensures that all transactions are consistent with the logical rules of the database, such as having a primary
 key. 
 **Isolation** requires that transactions operate separately from each other.
 
