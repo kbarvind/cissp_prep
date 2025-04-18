@@ -96,3 +96,25 @@ tracking progress.
 | **B. Structural Requirements**  | Requirements that focus on the system's architecture, design, or how components are arranged, rather than how the system behaves. |
 | **C. Behavioral Requirements**  | Describe **how** the system should behave in response to specific inputs or conditions. They often overlap with functional requirements but focus more on **system reactions**. |
 | **D. Functional Requirements** | Define the **specific tasks**, **inputs**, **outputs**, and **interactions** the software must perform to meet user needs. |
+
+---
+
+**Lost updates** occur when one transaction writes a value to the database that overwrites a value needed by transactions that have earlier precedence, causing those transactions to read an incorrect value. 
+**Dirty reads** occur when one transaction reads a value from a database that was written by another transaction that did not commit. 
+**Incorrect summaries** occur when one transaction is using an aggregate function to summarize data stored in a database while a second transaction is making modifications to the database, causing the summary to include incorrect information. 
+**SQL injection** is a web application security flaw, not a database concurrency problem
+
+---
+
+## 📊 Charts and Diagrams in Project & Software Management
+
+| **Term**             | **Description**                                                                                          |
+|----------------------|----------------------------------------------------------------------------------------------------------|
+| **WBS Chart** (Work Breakdown Structure) | A hierarchical breakdown of the project into smaller tasks or deliverables. Useful for managing scope and assigning responsibilities. |
+| **PERT Chart** (Program Evaluation Review Technique) | A network-based planning tool used to determine task sequences and calculate the project timeline using critical path analysis. |
+| **Gantt Chart**      | A bar chart that displays the project schedule over time. Shows task durations, dependencies, and progress. |
+| **Wireframe Diagram**| A low-fidelity layout of a web or app interface. Helps visualize user experience, page structure, and interactions. |
+
+---
+
+
