@@ -231,3 +231,17 @@ one individual demonstrates to another that they can achieve a result that requi
 
 24. Mirai targeted “Internet of Things” devices, including routers, cameras, and DVRs. As organizations bring an increasing number of devices like these into their corporate networks, protecting both internal and external targets from insecure, infrequently updated, and often vulnerable IoT devices is increasing important.
 
+24.
+The following are the seven principles of the Privacy by Design model.
+ - Proactive, not reactive; preventive, not remedial
+ - Privacy as the default setting
+ - Privacy embedded into design
+ - Full functionality—positive-sum, not zero-sum
+ - End-to-end security—full lifecycle protection
+ - Visibility and transparency—keep it open
+ - Respect for user privacy—keep it user-centric
+
+ 25. For systems running in System High mode, the user must have a valid security clearance for all information processed by the system, access approval for all information processed by the system, and a valid need to know for some, but not necessarily all, information processed by the system.
+
+26. The use of the Mimikatz tool is indicative of an attempt to capture user password hashes for use in a pass-the-hash attack against Microsoft Active Directory accounts.
+
