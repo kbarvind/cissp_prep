@@ -245,3 +245,55 @@ The following are the seven principles of the Privacy by Design model.
 
 26. The use of the Mimikatz tool is indicative of an attempt to capture user password hashes for use in a pass-the-hash attack against Microsoft Active Directory accounts.
 
+27. Covert timing channels alter the use of a resource in a measurable fashion to exfiltrate information. If a user types using a specific rhythm of Morse code, this is an example of a covert timing channel. Someone watching or listening to the keystrokes could receive a secret message with no trace of the message left in logs
+
+28. In a fault injection attack, the attacker attempts to compromise the integrity of a cryptographic device by causing some type of external fault. For example, they might use high-voltage electricity, high or low temperature, or other factors to cause a malfunction that undermines the security of the device.
+
+29. Binary keyspaces contain a number of keys equal to 2 raised to the power of the number of bits. Two to the eighth power is 256, so the keyspace will increase by a factor of 256.
+
+30 CPTED implements three strategies: natural access control, natural surveillance, and natural territorial reinforcement. 
+Natural access control uses barricades and other physical elements to create a separation between secure and insecure spaces. 
+Natural surveillance designs the environment to expose potential intruders to natural scrutiny by legitimate occupants. 
+Natural territorial reinforcement uses fences, signs, and other elements to clearly define secure spaces. 
+
+31. X.509 defines standards for public key certificates like those used with many smartcards. X.500 is a series of standards defining directory services
+
+32 
+A power spike is a momentary period of high voltage. 
+A surge is a prolonged period of high voltage. 
+Sags and brownouts are periods of low voltage.
+
+33
+Tara first must achieve a system baseline. She does this by applying the most recent full backup to the new system. This is Sunday's full backup. Once Tara establishes this baseline, she may then proceed to apply differential backups to bring the system back to a more recent state.
+
+To restore the system to as current a state as possible, Tara must first apply Sunday's full backup. She may then apply the most recent differential backup, from Wednesday at noon. Differential backups include all files that have changed since the most recent full backup, so the contents of Wednesday's backup contain all of the data that would be contained in Monday and Tuesday's backups, making the Monday and Tuesday backups irrelevant for this scenario.
+
+By switching from differential to incremental backups, Tara's weekday backups will only contain the information changed since the previous day. Therefore, she must apply all of the available incremental backups. She would begin by restoring the Sunday full backup and then apply the Monday, Tuesday, and Wednesday incremental backups.
+
+34
+Which one of the following is a layer of the ring protection scheme design concept that is not normally implemented?
+
+Layers 1 and 2 contain device drivers but are not normally implemented in practice, since they are often collapsed into layer 0. Layer 0 always contains the security kernel. Layer 3 contains user applications. Layer 4 does not exist in the design concept, but it may exist in customized implementations.
+
+35
+Process for Attack Simulation and Threat Analysis (PASTA) is a seven-stage threat modeling methodology. PASTA is a risk-centric approach that aims at selecting or developing countermeasures in relation to the value of the assets to be protected. 
+Visual, Agile, and Simple Threat (VAST) is a threat modeling concept that integrates threat and risk management into an Agile programming environment on a scalable basis. 
+Microsoft uses a Security Development Lifecycle (SDL) with the motto "Secure by Design, Secure by Default, Secure in Deployment and Communication" (also known as SD3+C). 
+STRIDE is a threat categorization scheme developed by Microsoft.
+
+
+36 Confusion and diffusion are two principles underlying most cryptosystems. 
+Confusion occurs when the relationship between the plaintext and the key is so complicated that an attacker can't merely continue altering the plaintext and analyzing the resulting ciphertext to determine the key. 
+Diffusion occurs when a change in the plaintext results in multiple changes spread throughout the ciphertext.
+
+37 Assuming that it is used properly, the one-time pad is the only known cryptosystem that is not vulnerable to attacks. All other cryptosystems, including transposition ciphers, substitution ciphers, and even AES, are vulnerable to attack, even if no attack has yet been discovered.
+
+38 An initialization vector (IV) is a random bit string (a nonce) that is the same length as the block size that is XORed with the message. IVs are used to create a unique ciphertext every time the same message is encrypted with the same key. Vigenère ciphers are an example of a substitution cipher technique. Steganography is a technique used to embed hidden messages within a binary file. Stream ciphers are used to encrypt continuous streams of data.
+
+39
+Cipher Block Chaining
+One important consideration when using CBC mode is that errors propagate—if one block is corrupted during transmission, it becomes impossible to decrypt that block and the next block as well. The other modes listed here do not suffer from this flaw.
+
+40. The major disadvantage of the ElGamal cryptosystem is that it doubles the length of any message it encrypts. Therefore, a 2,048-bit plaintext message would yield a 4,096-bit ciphertext message when ElGamal is used for the encryption process.
+
+41. The trusted computing base (TCB) has a component known as the reference monitor in theory, which becomes the security kernel in implementation
