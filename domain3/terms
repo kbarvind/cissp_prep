@@ -297,3 +297,14 @@ One important consideration when using CBC mode is that errors propagate—if on
 40. The major disadvantage of the ElGamal cryptosystem is that it doubles the length of any message it encrypts. Therefore, a 2,048-bit plaintext message would yield a 4,096-bit ciphertext message when ElGamal is used for the encryption process.
 
 41. The trusted computing base (TCB) has a component known as the reference monitor in theory, which becomes the security kernel in implementation
+
+42. The four types of ATOs are authorization to operate (not listed as an option), 
+- Common control authorization
+- Denial of authorization
+- Authorization to us
+- common control authorization, 
+- Authorization to use, and 
+- Denial of authorization. 
+
+43. The primary security concern of a distributed computing environment (DCE) is the interconnectedness of the components. This configuration could allow for error or malware propagation as well. If an adversary compromises one component, it may grant them the ability to compromise other components in the collective through pivoting and lateral movement
+
