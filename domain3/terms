@@ -324,5 +324,15 @@ One important consideration when using CBC mode is that errors propagate—if on
 49. Requiring users to log in remotely does not protect against password attacks such as brute-force or dictionary attacks. Strong password policies, physical access control, and two-factor authentication all improve the protection against brute-force and dictionary password attacks.
 
 
+50. This scenario would be best served by a massive parallel processing (MPP) system. 
+An MPP is usually constructed of numerous AMPs linked together. MPP systems can encompass thousands of processors. MPPs are managed by a central coordination system.
+
+Asymmetric multiprocessing (AMP) systems usually have independent processors, each with their own assigned instruction set, memory, and bus. AMP on its own is not quite suited for very large processing requirements. 
+Symmetric multiprocessing (SMP) systems have multiple processors, but they share a common OS, bus, and memory resources. 
+
+Multicore, the ability to process multiple execution threads simultaneously, is often a key component of modern SMP, AMP, and MPP deployments in addition to standard single CPU systems. But multicore on its own is not a complete solution for this scenario.
+
+51. Copyright protection generally lasts for 70 years after the death of the last surviving author of the work.
+
 
 
