@@ -195,3 +195,63 @@ Network Access Control (NAC) systems help enforce security policies on devices s
 | Post-admission  | Endpoint monitored after access        | Post             |
 
 ---
+
+# 🌐 Peering in Networking
+
+Peering refers to the **mutual agreement between two networks to exchange traffic directly**, without involving a third-party transit provider. It is a fundamental concept in the structure of the Internet.
+
+---
+
+## 🔍 What is Peering?
+
+| Aspect       | Description |
+|--------------|-------------|
+| **Definition** | A direct interconnection between two networks (usually ISPs, data centers, or cloud providers) to exchange traffic. |
+| **Purpose**    | To optimize routing, reduce latency, and cut costs by avoiding intermediate (transit) networks. |
+| **Where It's Used** | Internet backbone, cloud provider interconnects, CDN providers, IXPs (Internet Exchange Points) |
+
+---
+
+## 🔑 Types of Peering
+
+| Type              | Description |
+|-------------------|-------------|
+| **Public Peering** | Networks connect via an **Internet Exchange Point (IXP)** where many networks meet. |
+| **Private Peering** | A **dedicated direct connection** between two networks, typically via private lines. |
+| **BGP Peering**     | Uses **BGP (Border Gateway Protocol)** to exchange routing information between networks. |
+
+---
+
+## 🆚 Peering vs Transit
+
+| Feature      | **Peering**                             | **Transit**                             |
+|--------------|-----------------------------------------|-----------------------------------------|
+| **Cost**     | Often **free or settlement-free**       | **Paid service**                        |
+| **Scope**    | Traffic between **peering partners only** | Traffic to **any destination on the Internet** |
+| **Control**  | More direct control over traffic        | Less control, uses third-party routes   |
+| **Latency**  | Lower                                   | Potentially higher                      |
+
+---
+
+## 📍 Example Scenarios
+
+- **ISP Peering**: Two ISPs connect directly to avoid transit costs and improve performance.
+- **Cloud Peering**: Cloud providers like AWS, Azure, and Google Cloud peer to provide fast cloud-to-cloud communication.
+- **CDN Peering**: Content Delivery Networks (CDNs) peer with ISPs to serve content closer to users.
+
+---
+
+## ✅ Benefits of Peering
+
+- 🚀 **Lower Latency** (fewer hops)
+- 💰 **Reduced Bandwidth Costs**
+- 🔄 **Better Redundancy and Routing Control**
+- 📈 **Improved Network Performance and Reliability**
+
+---
+
+## 📘 Summary
+
+Peering helps build a faster, more cost-effective, and resilient Internet. It is essential in large-scale networking and plays a key role in content delivery, cloud access, and ISP efficiency.
+
+---

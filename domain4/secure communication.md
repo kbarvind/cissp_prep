@@ -91,3 +91,51 @@ To secure VoIP (Voice over IP) communication, CISSP candidates should understand
 | W      | Well-segmented network (VLANs)|
 
 ---
+
+
+# VXLAN vs SD-WAN Comparison
+
+## ⚙️ VXLAN (Virtual Extensible LAN)
+
+| Feature           | Description                                                                 |
+|------------------|-----------------------------------------------------------------------------|
+| **Purpose**       | Layer 2 network overlay over Layer 3 infrastructure (data center-focused)   |
+| **Use Case**      | Extending VLANs across geographically distributed data centers or virtual environments |
+| **How it works**  | Encapsulates Ethernet frames in UDP packets to tunnel L2 over L3            |
+| **Protocol**      | Uses UDP (typically port 4789)                                              |
+| **Scope**         | Data center networking and virtualization (e.g., VMware NSX, Cisco ACI)     |
+| **Key Benefit**   | Enables scalability (16 million VXLAN IDs vs. 4096 VLANs), isolation, and mobility of workloads |
+| **Typical Partners** | Works with technologies like EVPN, BGP, and underlays like MPLS/IP         |
+
+---
+
+## 🌍 SD-WAN (Software-Defined Wide Area Network)
+
+| Feature           | Description                                                                 |
+|------------------|-----------------------------------------------------------------------------|
+| **Purpose**       | Intelligent WAN routing and management for branch-to-branch, branch-to-cloud connectivity |
+| **Use Case**      | Replacing traditional MPLS with software-defined traffic management over broadband, LTE, etc. |
+| **How it works**  | Uses centralized control to apply policies and optimize traffic routing across multiple WAN links |
+| **Protocol**      | Uses encrypted tunnels (IPsec, TLS), often overlays on broadband/public internet |
+| **Scope**         | Wide Area Networking (between branches, HQ, cloud)                          |
+| **Key Benefit**   | Improved performance, security, lower cost, and better control compared to legacy WAN |
+| **Typical Vendors** | Cisco Viptela, Fortinet, VMware Velocloud, Palo Alto Prisma SD-WAN         |
+
+---
+
+## 🆚 Key Differences Summary
+
+| Feature           | VXLAN                               | SD-WAN                                  |
+|------------------|--------------------------------------|------------------------------------------|
+| **Layer**         | Layer 2 over Layer 3                | Primarily Layer 3 (routing & overlay)    |
+| **Use Case**      | Data center overlay networking      | Enterprise WAN optimization              |
+| **Focus**         | Extending networks virtually        | Routing and performance optimization     |
+| **Encapsulation** | Ethernet in UDP                     | IPsec or proprietary tunnels over IP     |
+| **Audience**      | Data center/network engineers       | Enterprise IT & network teams            |
+
+---
+
+## ✅ Summary
+
+- **VXLAN** is best suited for **virtualized environments and data center overlays**.
+- **SD-WAN** is best for **connecting and optimizing WANs across branches, data centers, and clouds**.

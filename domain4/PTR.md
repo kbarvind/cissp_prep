@@ -112,3 +112,23 @@ Understanding how **XDR (Extended Detection and Response)** and **NGFW (Next-Gen
  - Hiding in plain sight is not a security concept; it is a mistake on the part of the observer not to notice something that they should notice. This is not the same concept as camouflage, which is when an object or subject attempts to blend into the surroundings.
 
 ---
+
+IEEE 802.1X provides port-based access control and is useful both on wired and wireless connections to block access to systems and users that are unknown or that fail authentication. It is a common companion to NAC implementations.
+
+---
+
+Enterprise extended infrastructure mode exists when a wireless network is designed to support a large physical environment through the use of a single SSID but numerous access points. An enterprise extension is often used as an extension to a wired network and requires only a single logon event for each connected session for workers no matter where in the building they are located.
+
+---
+
+
+- Store-and-forward switching receives and stores the entire frame in a buffer before forwarding, offering greater error checking and suitability for ensuring data integrity. 
+- Arbitration is a media access protocol where a central authority or a predefined set of rules determines which device has the right to access the communication medium at any given time. It does not address integrity. 
+- Cut-through switching forwards a frame as soon as it reads the destination address, providing low latency and suitability for low-latency applications. It does not address integrity.
+- Deconfliction is a media access protocol that aims to avoid collisions and conflicts by assigning specific time slots or frequency bands to different devices for communication. It does not address integrity.
+
+---
+
+VDOMs are instances of firewalls, each with their own interfaces and rulesets allowing granular configurations based on security requirements. VDOMs are commonly used to accommodate different purposes, customers, or other needs where separately managed firewall instances are desirable
+
+---
