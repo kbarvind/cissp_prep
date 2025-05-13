@@ -34,5 +34,39 @@ The project scope and planning phase includes four actions:
  Trademarks are renewable indefinitely, and 
  trade secrets are protected as long as they remain secret.
 
+Patent - 20 Years
+Copyright - 70Y ~95Y ~120Y
+---
+
+Minimum security requirements should be modeled on your existing security policy. This is based on the idea that when working with a third party, that third party should have at least the same security as your organization.
+
+---
+
+**RMF Phases**
+
+| Phase      | Key Output                          |
+|------------|--------------------------------------|
+| Prepare    | Risk strategy, stakeholder context   |
+| Categorize | System categorization (Low/Mod/High)|
+| Select     | Tailored control set (from 800-53)   |
+| Implement  | Configured controls and documentation|
+| Assess     | Security Assessment Report (SAR)     |
+| Authorize  | ATO decision                         |
+| Monitor    | Ongoing assessments and updates      |
+
+
+---
+
+## Type of evidences
+
+## 🧾 Summary Table
+
+| Type of Evidence      | Source                  | Example                                     | CISSP Context                                     |
+|------------------------|--------------------------|----------------------------------------------|--------------------------------------------------|
+| **Best Evidence**       | Original items            | Original server logs, disk image             | Digital forensics, court-admissible evidence     |
+| **Documentary Evidence**| Written records (paper/digital) | Policies, logs, contracts             | Security audits, investigations, compliance      |
+| **Testimonial Evidence**| People (oral/written)     | Witness statement, analyst testimony         | Insider threat reporting, breach investigations  |
+| **Parol Evidence**      | Verbal clarifications     | Oral agreements made before a contract       | Contract disputes, SLA interpretation            |
+
 
 ---
