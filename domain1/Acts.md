@@ -17,6 +17,9 @@
 **GISRA**   - The Government Information Security Reform Act (GISRA) was the precursor to FISMA and expired in November 2002.
 **EEA** - Economic Espionage Act imposes fines and jail sentences on anyone found guilty of stealing trade secrets from a U.S. corporation. It gives true teeth to the intellectual property rights of trade secret owners. 
 
+**BIS** - The Bureau of Industry and Security within the Department of Commerce sets regulations on the export of encryption products outside of the United States. The other agencies listed here are not involved in regulating exports.
+
+
 **USPTO** United States Patent and Trademark Office - Responsibility for the registration of trademarks
 **Library of Congress** administers the copyright program
 **CFR** Code of Federal Regulations - the text of all administrative laws promulgated by federal agencies

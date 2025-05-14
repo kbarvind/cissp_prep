@@ -70,3 +70,15 @@ Minimum security requirements should be modeled on your existing security policy
 
 
 ---
+
+There are six actual risk management frameworks included in this list of options. They are: 
+(A) Risk Management Framework (RMF) defined by NIST, 
+(C) The Committee of Sponsoring Organizations (COSO) of the Treadway Commission's Enterprise Risk Management — Integrated Framework, 
+(D) ISACA's Risk IT Framework,
+(F) Operationally Critical Threat, Asset, And Vulnerability Evaluation (OCTAVE), 
+(H) Factor Analysis of Information Risk (FAIR), and 
+(I) Threat Agent Risk Assessment (TARA)
+
+---
+
+The Bureau of Industry and Security within the Department of Commerce sets regulations on the export of encryption products outside of the United States. The other agencies listed here are not involved in regulating exports.
