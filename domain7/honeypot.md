@@ -7,3 +7,16 @@
 
 ---
 
+# 🔐 Honeypot vs Honeynet
+
+| Feature          | Honeypot                                     | Honeynet                                      |
+|------------------|----------------------------------------------|-----------------------------------------------|
+| Definition       | A single decoy system                        | A network of decoy systems                     |
+| Purpose          | Trap and analyze attacks on a specific system| Simulate full network environment for deeper analysis |
+| Complexity       | Simple to deploy                             | More complex and resource-intensive            |
+| Interaction Type | Low or High                                  | High (often multiple high-interaction systems) |
+| Analysis Depth   | Limited to one system                        | Comprehensive, includes network behavior       |
+| Realism          | Simulated single system                      | Appears like a real corporate network          |
+| Use Case         | Early warning, basic threat research         | Advanced threat hunting, APT tracking          |
+
+---

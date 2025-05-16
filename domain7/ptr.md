@@ -39,3 +39,39 @@ What admissibility criteria prevents Frank from introducing the laptop as eviden
 To be admissible, evidence must be relevant, material, and competent. The laptop in this case is clearly material because it contains logs related to the crime in question. It is also relevant because it provides evidence that ties the hacker to the crime. It is not competent because the evidence was not legally obtained.
 
 ---
+
+Software escrow agreements place a copy of the source code for a software package in the hands of an independent third party who will turn the code over to the customer if the vendor ceases business operations. Service-level agreements, mutual assistance agreements, and compliance agreements all lose some or all of their effectiveness if the vendor goes out of business.
+
+
+---
+
+The two main methods of choosing records from a large pool for further analysis are sampling and clipping. 
+Sampling uses statistical techniques to choose a sample that is representative of the entire pool 
+clipping uses threshold values to select those records that exceed a predefined threshold because they may be of most interest to analysts.
+
+---
+
+- Expert opinion evidence allows individuals to offer their opinion based upon the facts in evidence and their personal knowledge. Expert opinion evidence may be offered only if the court accepts the witness as an expert in a particular field. 
+- Direct evidence is when witnesses testify about their direct observations. 
+- Real evidence consists of tangible items brought into court as evidence. 
+- Documentary evidence consists of written records used as evidence in court.
+
+---
+
+A forensic disk controller performs four functions. One of those, write blocking, intercepts write commands sent to the device and prevents them from modifying data on the device. The other three functions include returning data requested by a read operation, returning access-significant information from the device, and reporting errors from the device back to the forensic host. The controller should not prevent read commands from being sent to the device because those commands may return crucial information.
+
+---
+
+- Wave pattern motion detectors transmit ultrasonic or microwave signals into the monitor area, watching for changes in the returned signals bouncing off objects. 
+- Infrared head-based detectors watch for unusual heat patterns. 
+- Capacitance detectors work based upon electromagnetic fields.
+
+---
+
+Smurf attacks use a distributed attack approach to send ICMP echo replies at a targeted system from many different source addresses. The most effective way to block this attack would be to block inbound ICMP traffic.
+
+---
+
+The Security Content Automation Protocol (SCAP) is a suite of specifications used to handle vulnerability and security configuration information. The National Vulnerability Database provided by NIST uses SCAP. 
+
+---
