@@ -75,3 +75,16 @@ Smurf attacks use a distributed attack approach to send ICMP echo replies at a t
 The Security Content Automation Protocol (SCAP) is a suite of specifications used to handle vulnerability and security configuration information. The National Vulnerability Database provided by NIST uses SCAP. 
 
 ---
+
+**Hot site:** A site with dedicated storage and real-time data replication, often with shared equipment that allows restoration of service in a very short time.
+**Warm site:** A site that relies on shared storage and backups for recovery.
+**Cold site:** A rented space with power, cooling, and connectivity that can accept equipment as part of a recovery effort.
+**Mobile site:** Non-mainstream alternatives to traditional recovery sites. They typically consist of self-contained trailers or other easily relocated units. Mobile sites are usually configured as cold sites or warm sites, depending on the disaster recovery plan they are designed to support.
+Security Operations
+
+---
+
+A mantrap uses two sets of doors, only one of which can open at a time. 
+A mantrap is a type of preventive access control, although its implementation is a physical control.
+
+---
