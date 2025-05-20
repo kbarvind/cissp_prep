@@ -68,3 +68,9 @@ The IP addresses provided are RFC 1918 addresses.
 - **Port scans** help discover **open services** and **network security posture**.
 
 ---
+
+**Requirement Traceability Matrices**
+
+Employing the RTM as a dynamic, iterative tool that adjusts to changing requirements over time is the most significant aspect. This approach ensures that the RTM stays relevant and useful throughout the software development lifecycle, capturing changes in requirements, project tasks, and deliverable documents, as well as adapting to evolving security landscapes. This continuous adaptation and tracking of requirements are key to avoiding overlooked elements and mitigating potential vulnerabilities. The incorrect answers: Updating the RTM to reflect the requirements of every new software version is an important practice, but it's not the most significant aspect. This practice ensures that the new requirements are documented, but it doesn't necessarily ensure that the RTM evolves with changing project needs or that the implementation of these requirements is tracked effectively. Having the RTM encompass all software requirements, including project tasks and deliverable documents, is crucial for comprehensive project management. But the breadth of information included in the RTM is less significant than how this information is used and updated over time, particularly as the requirements and priorities of a project may change. Including specific security requirements in the RTM from the start is a best practice, as it embeds security into the software development process. Nevertheless, while this is important, it does not address the need for these requirements to be adaptable over time in response to changing threats and project objectives.
+
+---

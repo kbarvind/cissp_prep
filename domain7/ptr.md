@@ -88,3 +88,14 @@ A mantrap uses two sets of doors, only one of which can open at a time.
 A mantrap is a type of preventive access control, although its implementation is a physical control.
 
 ---
+
+Remote access Trojans (RATs) are designed to grant attackers remote administrative access to systems. 
+Potentially unwanted programs (PUPs) are any type of software that is initially approved by the user but then performs undesirable actions.
+
+---
+
+CAPEC, or Common Attack Pattern Enumeration and Classification, is a dictionary of known attack patterns. 
+STIX is the Structured Threat Information eXpression language used to describe threats in a standardized way, and 
+TAXII, the Trusted Automated eXchange of Indicator Information, defines how threat information can be shared and exchanged. All of these are examples of threat intelligence feed standards.
+
+---
